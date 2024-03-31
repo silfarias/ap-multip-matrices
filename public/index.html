@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matrix Multiplication</title>
+</head>
+<body>
+    <h1>Aprendizaje Automático</h1>
+    <h1>Multiplicación de matrices</h1>
+    <br>
+    <h2>Ingrese las dimensiones de las Matrices</h2>
+
+    <div id="dimensions-matriz1">
+        <label for="rows">Filas de la matriz 1:</label>
+        <input type="number" id="rows">
+
+        <label for="columns">Columnas de la matriz 1:</label>
+        <input type="number" id="columns">
+    </div>
+    <br>
+    <br>
+    <div id="dimensions-matriz2">
+        <label for="rows">Filas de la matriz 2:</label>
+        <input type="number" id="rows2">
+
+        <label for="columns">Columnas de la matriz 2:</label>
+        <input type="number" id="columns2">
+    </div>
+    <br>
+    <button onclick="createMatrices()">Crear Matrices</button>
+
+    <div id="matrices">
+
+    </div>
+
+    <br>
+    <button id="myButton">
+        Multiplicar
+    </button>
+    <br>
+
+    <div id="resultado">
+
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
