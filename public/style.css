@@ -1,8 +1,132 @@
+body {
+    background-color: #fbe4d8;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#matriz-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#matrix-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .matrix-input {
-    width: 30px; /* Ancho deseado */
-    height: 30px; /* Alto deseado */
-    padding: 3px; /* Elimina el relleno interno */
+    width: 40px; 
+    height: 40px;
+    padding: 3px;
     margin: 3px;
     border: 1px solid black;
     display: inline-block;
+    border-radius: 5px;
+}
+
+.titulos {
+    margin-top: 15px;
+    width: 620px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #190019;
+    border-radius: 8px;
+    border-color: #522b5b;
+    background-color: #dfb6b2;
+    font-size: auto;
+    color: white;
+}
+
+.dimensiones {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 770px;
+    height: 180px;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid #190019;
+    background-color: #854f6c;
+    padding: 10px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+
+.subtitulo {
+    color: white;
+    text-align: center;
+}
+#dimensiones-matriz1 {
+    margin-right: 15px;
+}
+
+#creacion-matrixs {
+    padding: 8px;
+    /* margin: 10px; */
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #522b5b;
+    transition: background-color 0.3s ease;
+    border: 1px solid #190019;
+}
+
+#creacion-matrixs:hover {
+    background-color: #2b124c;
+    cursor: pointer;
+}
+
+#myButton {
+    background-color: #854f6c;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 1px solid #190019;
+    transition: background-color 0.3s ease;
+}
+
+#myButton:hover {
+    background-color: #2b124c;
+    cursor: pointer;
+}
+
+input {
+    border: 1px, solid, #190019;
+    border-radius: 5px;
+}
+
+#resultado {
+    margin-bottom: 15px;
+    border: 1px solid #190019;
+    border-radius: 8px;
+    background-color: #dfb6b2;
+}
+
+#matrices {
+    margin-top: 20px;
+}
+
+.matrix {
+    margin: 5px;
+    border: 1px solid #190019;
+    border-radius: 8px;
+    background-color: #dfb6b2;
+}
+
+.matrix-input {
+    background-color: white;
 }

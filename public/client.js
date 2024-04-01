@@ -1,18 +1,20 @@
 function createMatrices() {
+    // Obtener los valores de las dimensiones de las matrices
     const rows = parseInt(document.getElementById('rows').value);
     const columns = parseInt(document.getElementById('columns').value);
 
     const rows2 = parseInt(document.getElementById('rows2').value);
     const columns2 = parseInt(document.getElementById('columns2').value);
 
+    // Validar que las dimensiones de las matrices sean validas
     if (columns !== rows2) {
         alert('El número de columnas de la matriz 1 es distinto al número de filas de la matriz 2');
         document.getElementById('matrices').innerHTML = '';
     } else {
         const matrix1Id = 'matrix1';
         const matrix2Id = 'matrix2';
-        const matrix1 = createMatrix(rows, columns, 'matrix1', matrix1Id);
-        const matrix2 = createMatrix(rows2, columns2, 'matrix2', matrix2Id);
+        const matrix1 = createMatrix(rows, columns, 'Matriz 1', matrix1Id);
+        const matrix2 = createMatrix(rows2, columns2, 'Matriz 2', matrix2Id);
 
         document.getElementById('matrices').innerHTML = matrix1 + matrix2;
 
@@ -28,9 +30,10 @@ function createMatrices() {
     }
 }
 
+// Creamos matriz
 function createMatrix(rows, columns, matrixName, matrixId) {
-    let matrixHTML = `<div id="${matrixId}" class="matrix">
-                        <h3>${matrixName}</h3>`;
+    let matrixHTML = `<div id="${matrixId}" class="matrix col-3">
+                        <h5 id="matrix-name">${matrixName}</h5>`;
     for (let i = 0; i < rows; i++) {
         matrixHTML += '<div class="matrix-row">';
         for (let j = 0; j < columns; j++) {
@@ -89,7 +92,7 @@ function getMatrixValues(matrixId, rows, columns) {
 }
 
 function displayResult(result) {
-    let resultHTML = '<h2>Matriz Resultante:</h2>';
+    let resultHTML = '<h4 id="matriz-result">Matriz Resultante:</h4>';
     resultHTML += '<table>';
     for (let i = 0; i < result.length; i++) {
         resultHTML += '<tr>';
